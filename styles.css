@@ -9,6 +9,12 @@ html, body {
     padding: 0;
 }
 
+.nav {
+    margin-top: 1em;
+    margin-right: 1.5em;
+    float: right;   
+}
+
 .nav ul {
     margin: 0;
     list-style-type: none;
@@ -26,15 +32,53 @@ html, body {
 }
 
 .g-apps {
-    width: 1em;
-    height: 1em;
     font-size: 13px;
+    width: 1em;
+    height: 1em;    
 }
 
-.main-header {
-    margin-top: 1em;
-    margin-right: 1.5em;
-    float: right;   
+.main-content {
+    width: 600px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+    position: relative;
+    text-align: center;
+    border: 1px solid #dfe1e5;
+    width: 582px;
+    height: 44px;
+    border-radius: 24px;
+    margin: 20px auto;
+}
+
+.mag-glass {
+    height: 20px;
+    line-height: 24px;
+    margin: auto 10px;
+}
+
+.input-field {
+    border: none;
+    outline: none;
+    display: flex;
+    flex: 1;
+}
+
+.k-button {
+    background-color: transparent;
+    border: none;
+    margin: auto 17px;
+}
+
+.keyboard {
+    height: 30px;
+    line-height: 34px;
 }
 
 .button {
@@ -61,3 +105,47 @@ html, body {
     min-width: 68px;
     float: none;
 }
+
+span a{
+    text-decoration: none;
+    font-size: 13px;
+    padding-right: 27px;
+    color: #5F6368;
+}
+
+.footer {
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    margin-left: 0px;
+}
+
+.div-p {    
+    display: block;
+    line-height: 40px;
+    color: rgba(0, 0, 0, 0.54);
+}
+div p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 30px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.foot-left {
+    display: inline-block;
+    float: none;
+    margin-left: 30px;
+    line-height: 40px;
+}
+
+.foot-right {
+    display: block;
+    float: right;
+    line-height: 40px;
+}
+
