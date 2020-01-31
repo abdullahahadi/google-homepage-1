@@ -114,7 +114,8 @@ span a{
 }
 
 .footer {
-    display: block;
+    display: flex;
+    flex-direction: column;
     bottom: 0;
     left: 0;
     right: 0;
@@ -129,6 +130,11 @@ span a{
     line-height: 40px;
     color: rgba(0, 0, 0, 0.54);
 }
+
+.div-span {
+    display: flex;
+}
+
 div p {
     margin-top: 0;
     margin-bottom: 0;
@@ -137,15 +143,17 @@ div p {
 }
 
 .foot-left {
+    flex: 1;
     display: inline-block;
-    float: none;
     margin-left: 30px;
     line-height: 40px;
 }
 
 .foot-right {
-    display: block;
-    float: right;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;    
     line-height: 40px;
 }
 
