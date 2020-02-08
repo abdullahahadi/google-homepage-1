@@ -1,63 +1,79 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
         <title>Google</title>
-        <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body{
+            font-family: arial,sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #5f6368;;
+        }
+        .container {
+            text-align: center;
+            margin: 0 auto;
+        }
+        img {
+            padding-top: 109px;
+            width: auto;
+            height: auto;
+        }
+        input {
+            background: transparent;
+            border-radius: 20px;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        button{
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .footer {
+            width: 100%;
+            height: 80px;
+            background-color:rgb(242, 242, 242);
+            margin-top: 180px;
+
+        }
+        footer a {
+            display: inline-block;
+            margin-top: 590px;
+            
+           
+        }
+        a {
+
+            padding-left: 10px;
+            font-size: small;
+            color: #5f6368;
+            
+            text-decoration: none;
+
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>    
     </head>
 
     <body>
-
-        <header>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#">Gmail</a></li>
-                    <li><a href="#">Imagens</a></li>
-                    <li><a href="#"><img src="images/buttons.png" alt="google apps" class="g-apps"></a></li>
-                    <li><a href="#"><button class="button button-login">Fazer Login</button></a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="main-content">
-
-            <img src="images/google-logo.png" alt="google logo">
-
-            <form action="searchbar">
-                <div class="search-bar">
-                    <img class="mag-glass" src="images/mag-glass.png" alt="magnifying glass">
-                    <input class="input-field" type="text" name="search-bar">
-                    <button class="k-button">
-                        <img class="keyboard" src="images/keyboard.png" alt="keyboard">
-                    </button>
-                </div>
-
-                <div>
-                    <button class="button">Pesquisa Google</button>
-                    <button class="button">Estou com sorte</button>
-                </div>
-            </form>
+        <div class="container">
+            <div class="navbar"></div>
+            <div class="content">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google log">
+                <form action="www.google.com">
+                    <input type="search"  size="80" autofocus ><br>
+                    <button>Google Search</button>
+                    <button>I'm Feeling Lucky</button>
+                </form>
+            </div>
+            <div class="footer">
+                <a href="">Advertising</a>
+                <a href="">Business</a>
+                <a href="">About</a>
+                <a href="">How search works</a>
+            </div>
         </div>
-
-        <footer class="footer">
-            <div class="div-p">
-                <p>Brasil</p>
-            </div>
-            <div class="div-span">
-                <span class="foot-left">
-                    <a href="#">Publicidade</a>
-                    <a href="#">Negócios</a>
-                    <a href="#">Sobre</a>
-                    <a href="#">Como funciona a Pesquisa</a>
-                </span>
-
-                <span class="foot-right">
-                    <a href="#">Privacidade</a>
-                    <a href="#">Termos</a>
-                    <a href="#">Configurações</a>
-                </span>
-            </div>
-        </footer>
-
     </body>
 </html>
